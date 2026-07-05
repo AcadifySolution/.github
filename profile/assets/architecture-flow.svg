@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="auto">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 0.95; }
+      }
+      @keyframes draw-path {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .floater-1 {
+        animation: float 6s infinite ease-in-out;
+      }
+      .floater-2 {
+        animation: float 6s infinite ease-in-out;
+        animation-delay: 2s;
+      }
+      .floater-3 {
+        animation: float 6s infinite ease-in-out;
+        animation-delay: 4s;
+      }
+      .pulsing-flow {
+        animation: pulse 3s infinite ease-in-out;
+      }
+      .rotating-gear {
+        animation: spin 30s infinite linear;
+        transform-origin: 500px 115px;
+      }
+      .draw-pipe {
+        stroke-dasharray: 120;
+        stroke-dashoffset: 120;
+        animation: draw-path 3s forwards ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
+
+  <!-- Pipeline Connectors (Isometric flow paths) -->
+  <g fill="none" stroke-width="1.5">
+    <!-- Path 1 to 2 -->
+    <path d="M 330 115 H 460" stroke="#cf6b48" class="draw-pipe" opacity="0.6"/>
+    <!-- Path 2 to 3 -->
+    <path d="M 540 115 H 670" stroke="#cf6b48" class="draw-pipe" style="animation-delay: 1.5s;" opacity="0.6"/>
+    
+    <!-- Ambient connector paths -->
+    <path d="M 330 115 H 460" stroke="#475569" opacity="0.2"/>
+    <path d="M 540 115 H 670" stroke="#475569" opacity="0.2"/>
+  </g>
+
+  <!-- Flow Direction Arrows -->
+  <g fill="#cf6b48" class="pulsing-flow">
+    <polygon points="400,111 408,115 400,119" />
+    <polygon points="610,111 618,115 610,119" />
+  </g>
+
+  <!-- Stage 1 Block: Ingestion & Security (Isometric Cube Left) -->
+  <g class="floater-1">
+    <!-- Top Face -->
+    <polygon points="250,55 310,75 250,95 190,75" fill="#1e293b" stroke="#cf6b48" stroke-width="1"/>
+    <!-- Left Face -->
+    <polygon points="190,75 250,95 250,145 190,125" fill="#0f172a" stroke="#cf6b48" stroke-width="1"/>
+    <!-- Right Face -->
+    <polygon points="250,95 310,75 310,125 250,145" fill="#1e293b" stroke="#cf6b48" stroke-width="1"/>
+    <!-- Labels -->
+    <text x="250" y="80" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">INGESTION</text>
+    <text x="250" y="165" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">01. Security Shield</text>
+    <text x="250" y="180" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" text-anchor="middle">PII Redaction &amp; Auditing</text>
+  </g>
+
+  <!-- Stage 2 Block: Processing & Routing (Isometric Cube Center) -->
+  <g class="floater-2">
+    <!-- Top Face -->
+    <polygon points="500,55 560,75 500,95 440,75" fill="#cf6b48" fill-opacity="0.15" stroke="#cf6b48" stroke-width="1.5"/>
+    <!-- Left Face -->
+    <polygon points="440,75 500,95 500,145 440,125" fill="#0f172a" stroke="#cf6b48" stroke-width="1"/>
+    <!-- Right Face -->
+    <polygon points="500,95 560,75 560,125 500,145" fill="#1e293b" stroke="#cf6b48" stroke-width="1"/>
+    <!-- Rotating Gear representation on Top Face -->
+    <g class="rotating-gear">
+      <circle cx="500" cy="75" r="12" fill="none" stroke="#cf6b48" stroke-width="1" stroke-dasharray="3, 3"/>
+      <circle cx="500" cy="75" r="6" fill="none" stroke="#cf6b48" stroke-width="1"/>
+    </g>
+    <!-- Labels -->
+    <text x="500" y="80" fill="#cf6b48" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">PROCESSING</text>
+    <text x="500" y="165" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">02. LLM Gateway</text>
+    <text x="500" y="180" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" text-anchor="middle">Semantic RAG &amp; Routing</text>
+  </g>
+
+  <!-- Stage 3 Block: Verification & Delivery (Isometric Cube Right) -->
+  <g class="floater-3">
+    <!-- Top Face -->
+    <polygon points="750,55 810,75 750,95 690,75" fill="#1e293b" stroke="#cf6b48" stroke-width="1"/>
+    <!-- Left Face -->
+    <polygon points="690,75 750,95 750,145 690,125" fill="#0f172a" stroke="#cf6b48" stroke-width="1"/>
+    <!-- Right Face -->
+    <polygon points="750,95 810,75 810,125 750,145" fill="#1e293b" stroke="#cf6b48" stroke-width="1"/>
+    <!-- Checkmark representation -->
+    <path d="M 742 75 L 748 81 L 758 70" fill="none" stroke="#cf6b48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pulsing-flow"/>
+    <!-- Labels -->
+    <text x="750" y="80" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="800" text-anchor="middle">DELIVERY</text>
+    <text x="750" y="165" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">03. Playwright E2E</text>
+    <text x="750" y="180" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" text-anchor="middle">Evaluation &amp; Quality Gates</text>
+  </g>
+</svg>
