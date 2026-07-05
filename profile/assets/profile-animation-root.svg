@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="auto">
+  <defs>
+    <!-- Scanning Gradient -->
+    <linearGradient id="scanner-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cf6b48" stop-opacity="0.0"/>
+      <stop offset="50%" stop-color="#cf6b48" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#cf6b48" stop-opacity="0.0"/>
+    </linearGradient>
+    <style>
+      @keyframes sweep-line {
+        0% { transform: translateX(0px); opacity: 0.1; }
+        30% { opacity: 0.8; }
+        70% { opacity: 0.8; }
+        100% { transform: translateX(280px); opacity: 0.1; }
+      }
+      @keyframes pulse-cell {
+        0%, 100% { fill-opacity: 0.2; }
+        50% { fill-opacity: 0.85; }
+      }
+      @keyframes float-y {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      .scanner-bar {
+        animation: sweep-line 4s infinite linear;
+      }
+      .pulsing-green {
+        animation: pulse-cell 3s infinite ease-in-out;
+      }
+      .pulsing-orange {
+        animation: pulse-cell 2.5s infinite ease-in-out;
+      }
+      .pulsing-slate {
+        animation: pulse-cell 4s infinite ease-in-out;
+      }
+      .floating-text {
+        animation: float-y 5s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
+  
+  <!-- Diagnostic Grid (Right Side) -->
+  <g transform="translate(600, 60)" stroke="#1e293b" stroke-width="0.75" fill="none">
+    <!-- Grid Outlines -->
+    <rect x="0" y="0" width="280" height="200" rx="6" stroke="#475569" stroke-width="1.5" opacity="0.3"/>
+    
+    <!-- Matrix Cells (Representing AI Test Cases) -->
+    <!-- Row 1 -->
+    <rect x="20" y="20" width="40" height="40" rx="4" fill="#10b981" class="pulsing-green" style="animation-delay: 0.2s;" stroke="none"/>
+    <rect x="70" y="20" width="40" height="40" rx="4" fill="#1e293b" class="pulsing-slate" style="animation-delay: 1.0s;" stroke="none"/>
+    <rect x="120" y="20" width="40" height="40" rx="4" fill="#10b981" class="pulsing-green" style="animation-delay: 0.7s;" stroke="none"/>
+    <rect x="170" y="20" width="40" height="40" rx="4" fill="#cf6b48" class="pulsing-orange" style="animation-delay: 1.5s;" stroke="none"/>
+    <rect x="220" y="20" width="40" height="40" rx="4" fill="#10b981" class="pulsing-green" style="animation-delay: 0.4s;" stroke="none"/>
+    
+    <!-- Row 2 -->
+    <rect x="20" y="80" width="40" height="40" rx="4" fill="#1e293b" class="pulsing-slate" style="animation-delay: 1.8s;" stroke="none"/>
+    <rect x="70" y="80" width="40" height="40" rx="4" fill="#10b981" class="pulsing-green" style="animation-delay: 0.5s;" stroke="none"/>
+    <rect x="120" y="80" width="40" height="40" rx="4" fill="#cf6b48" class="pulsing-orange" style="animation-delay: 0.1s;" stroke="none"/>
+    <rect x="170" y="80" width="40" height="40" rx="4" fill="#10b981" class="pulsing-green" style="animation-delay: 1.2s;" stroke="none"/>
+    <rect x="220" y="80" width="40" height="40" rx="4" fill="#1e293b" class="pulsing-slate" style="animation-delay: 0.6s;" stroke="none"/>
+
+    <!-- Row 3 -->
+    <rect x="20" y="140" width="40" height="40" rx="4" fill="#10b981" class="pulsing-green" style="animation-delay: 0.9s;" stroke="none"/>
+    <rect x="70" y="140" width="40" height="40" rx="4" fill="#cf6b48" class="pulsing-orange" style="animation-delay: 0.3s;" stroke="none"/>
+    <rect x="120" y="140" width="40" height="40" rx="4" fill="#10b981" class="pulsing-green" style="animation-delay: 1.4s;" stroke="none"/>
+    <rect x="170" y="140" width="40" height="40" rx="4" fill="#1e293b" class="pulsing-slate" style="animation-delay: 2.0s;" stroke="none"/>
+    <rect x="220" y="140" width="40" height="40" rx="4" fill="#10b981" class="pulsing-green" style="animation-delay: 0.8s;" stroke="none"/>
+
+    <!-- Sweeping Scanner Glow -->
+    <rect x="10" y="10" width="20" height="180" fill="url(#scanner-glow)" class="scanner-bar" stroke="none"/>
+  </g>
+
+  <!-- Technical Brand Copy (Left Side) with float animation -->
+  <g class="floating-text" transform="translate(80, 0)">
+    <!-- Top Tiny Status Indicator -->
+    <rect x="0" y="85" width="8" height="8" rx="2" fill="#cf6b48" class="pulsing-orange"/>
+    <text x="18" y="93" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5px">MODEL EVALUATION LAB</text>
+    
+    <!-- Brand Title -->
+    <text x="0" y="145" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="42" font-weight="800" letter-spacing="-1px">Acadify AI Labs</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="180" fill="#cf6b48" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="15" font-weight="600" letter-spacing="2px">MODEL TRAINING &amp; ADVERSARIAL EVALUATION</text>
+    
+    <!-- Human Copy Intro -->
+    <text x="0" y="210" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="13" font-weight="400">LLM Behavioral Diagnostics, Security &amp; Safety Auditing</text>
+  </g>
+</svg>

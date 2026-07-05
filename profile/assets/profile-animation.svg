@@ -98,7 +98,7 @@
     <text x="0" y="145" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="42" font-weight="800" letter-spacing="-1px">Acadify Solution</text>
     
     <!-- Subtitle -->
-    <text x="0" y="180" fill="#cf6b48" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="15" font-weight="600" letter-spacing="2.5px">ENTERPRISE AI &amp; MVP PARTNER</text>
+    <text x="0" y="180" fill="#cf6b48" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="15" font-weight="600" letter-spacing="2.5px">ENTERPRISE AI DEPLOYMENT &amp; AGENT WORKFLOWS</text>
     
     <!-- Human Copy Intro -->
     <text x="0" y="210" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="13" font-weight="400">Official GitHub Technology &amp; Anthropic Network Partner</text>
