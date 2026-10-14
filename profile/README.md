@@ -1,110 +1,47 @@
 # Acadify Solution
 
-**Enterprise AI engineering, model development, evaluation, and deployment.**
+AI engineering, evaluation, and practical software development.
 
-Acadify Solution builds practical AI systems for companies that need to move from prototype to production. Our public engineering work covers **LLM evaluation, fine-tuning, RAG systems, autonomous agents, AI security, and deployment infrastructure**.
+We build tools and reference implementations for teams working with language models,
+retrieval, model adaptation, and application delivery. Start with the project that
+matches your use case, then follow its setup guide and tests.
 
-**Website:** https://acadifysolution.com  
-**AI Platform & Labs:** https://ai.acadifysolution.com/  
-**Engineering & AI Blog:** https://acadifysolution.com/blogs  
-**GitHub:** https://github.com/AcadifySolution  
-**LinkedIn:** https://www.linkedin.com/company/acadify-solutions/  
-**General:** hello@acadifysolution.com
+[Website](https://acadifysolution.com) ·
+[Acadify AI Lab](https://ai.acadifysolution.com/) ·
+[Contact](mailto:contact@acadifysolution.com)
 
-## What we build
+## Explore the engineering work
 
-| Area | Focus |
-|---|---|
-| LLM Engineering | Fine-tuning, LoRA/QLoRA, model adaptation and deployment |
-| AI Evaluation | Accuracy, semantic similarity, grounding, safety, regression testing |
-| RAG | Retrieval pipelines, document processing, vector search and reranking |
-| AI Agents | Tool use, orchestration, validation and reliable workflow execution |
-| AI Security | LLM gateways, PII protection, prompt-risk controls and auditability |
-| Cloud AI | AWS, GCP, Docker, Kubernetes and Terraform-based infrastructure |
+| Project | What you can explore |
+| --- | --- |
+| [AI Evals Framework](https://github.com/AcadifySolution/ai-evals-framework) | Dataset-based evaluation, metric thresholds, and ordered evaluation reports |
+| [LLM Security Proxy](https://github.com/AcadifySolution/llm-security-proxy) | API-key access, pattern-based prompt screening, PII redaction, and audit events |
+| [Fine-Tuning Pipeline](https://github.com/AcadifySolution/fine-tuning-pipeline) | Dataset preparation, LoRA/QLoRA training code, and training configuration examples |
+| [Enterprise RAG Boilerplate](https://github.com/AcadifySolution/enterprise-rag-boilerplate) | Document ingestion, metadata-filtered retrieval, vector-store adapters, and response checks |
+| [Autonomous Agent Swarm](https://github.com/AcadifySolution/autonomous-agent-swarm) | Task queues, workflow dependencies, persisted state, recovery, and human approval gates |
+| [Aegis MVP Launchpad](https://github.com/AcadifySolution/aegis-mvp-launchpad) | A deterministic planning demo with a React dashboard and FastAPI backend |
+| [ASR Feedback](https://github.com/AcadifySolution/asr-feedback) | Feedback schemas, example records, SDK source, and evaluation playbooks |
+| [Sales Automation](https://github.com/AcadifySolution/Sales-Automation) | A local sales dashboard and configurable lead, CRM, and follow-up workflows |
+| [Engineering Standards](https://github.com/AcadifySolution/engineering-standards) | Git branching, review practices, coding guidance, and release checklists |
 
-## Public engineering projects
+## Evaluate before adopting
 
-- **AI Evals Framework** — repeatable evaluation of LLM and RAG outputs with correctness, semantic, grounding and safety metrics.  
-  https://github.com/AcadifySolution/ai-evals-framework
+These repositories are reference implementations and development tools. Read each
+README and security policy for implemented behavior, mock modes, configuration,
+and limitations. Passing unit tests does not establish production readiness,
+regulatory compliance, or complete protection from prompt injection.
 
-- **LLM Security Proxy** — security gateway for LLM traffic with request controls, PII handling, guardrails and audit logging.  
-  https://github.com/AcadifySolution/llm-security-proxy
+Check the repository's **Actions** tab for current validation results and its
+**Pull requests** tab for proposed changes. Infrastructure examples require a
+separate review of access controls, costs, networking, and operational needs
+before deployment. Project-specific license terms are in each repository.
 
-- **Fine-Tuning Pipeline** — LoRA/QLoRA SFT pipeline with Accelerate, DeepSpeed and SageMaker deployment scaffolding.  
-  https://github.com/AcadifySolution/fine-tuning-pipeline
+## Work with us or contribute
 
-- **Enterprise RAG Boilerplate** — production-oriented RAG reference architecture and implementation patterns.  
-  https://github.com/AcadifySolution/enterprise-rag-boilerplate
+For implementation and architecture inquiries, contact
+[contact@acadifysolution.com](mailto:contact@acadifysolution.com).
 
-- **Autonomous Agent Swarm** — orchestration patterns for multi-agent workflows, retries, checkpoints and operational controls.  
-  https://github.com/AcadifySolution/autonomous-agent-swarm
-
-- **ASR Feedback** — structured evaluation and feedback infrastructure for AI systems.  
-  https://github.com/AcadifySolution/asr-feedback
-
-## Official resources
-
-### AI Platform & Labs
-
-**https://ai.acadifysolution.com/**
-
-Our AI platform and lab environment for LLM evaluation, RAG, AI architecture reviews, reliability evaluation and related platform work.
-
-**AI Platform & Labs:** ai@acadifysolution.com
-
-### Engineering & AI Blog
-
-**https://acadifysolution.com/blogs**
-
-Articles and technical content covering AI engineering, LLMs, RAG, evaluation, security, development and practical implementation.
-
-## Business & engagement
-
-### Enterprise Sales
-Proposals, scoping, quotes, custom statements of work, dedicated engineering pods and enterprise MVP delivery.
-
-**sales@acadifysolution.com**
-
-### Strategic Partnerships
-Technology alliances, cloud reseller partnerships and executive co-development engagements.
-
-**business@acadifysolution.com**
-
-### AI Platform & Labs
-LLM evaluation, RAG, platform sandbox, architecture reviews and reliability evaluations.
-
-**ai@acadifysolution.com**
-
-### Careers & Talent
-Engineering pods, AI engineers, full-stack architects and DevSecOps opportunities.
-
-**jobs@acadifysolution.com**
-
-### General Communications
-General inquiries, event invitations, press outreach and technical queries.
-
-**hello@acadifysolution.com**
-
-## Our engineering approach
-
-We focus on systems that are:
-
-**Reliable** — deterministic checks, validation, failure handling and regression coverage.  
-**Observable** — useful telemetry, evaluation reports and operational signals.  
-**Secure** — least-privilege infrastructure, secrets hygiene and protection of sensitive model data.  
-**Practical** — architecture chosen around the actual product, workload and deployment constraints.
-
-## For developers, AI teams and enterprises
-
-Explore the public repositories for reusable reference implementations, evaluation patterns, infrastructure examples and engineering practices.
-
-For implementation, architecture, AI evaluation, model pipelines or deployment work:
-
-**sales@acadifysolution.com**  
-https://acadifysolution.com
-
-> Public repositories describe representative engineering work. Specific client engagements, metrics, infrastructure and security controls may vary by project and are not disclosed unless authorized.
-
-## Keywords
-
-Acadify Solution, Acadify AI, enterprise AI, AI engineering, LLM engineering, generative AI, large language models, LLM evaluation, AI evaluation, model evaluation, RAG, retrieval augmented generation, LLM fine-tuning, LoRA, QLoRA, autonomous agents, AI agents, LLM security, AI security, PII protection, prompt injection defense, AI infrastructure, AWS SageMaker, Kubernetes, Terraform, machine learning engineering, AI development company, AI solutions, AI platform, AI labs, AI R&D, enterprise MVP development, AI architecture, AI reliability.
+For code contributions, follow the target repository's `CONTRIBUTING.md`, open a
+focused branch and pull request, and include the checks you ran. For suspected
+security issues, use that repository's `SECURITY.md` reporting instructions and
+keep credentials and sensitive records out of public issues.
